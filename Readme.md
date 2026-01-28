@@ -1,13 +1,11 @@
+cat << 'EOF' > README.md
 # 🧩 MINI CRM BACKEND  
+
 ### Role-Based Customer & Task Management System
 
-Mini CRM Backend is a **secure, role-based customer relationship management system**
-built to manage **users, customers, and task workflows** efficiently.
-It demonstrates **clean backend architecture, RBAC, and real-world API design**
-using modern backend technologies.
+Mini CRM Backend is a **secure, role-based customer relationship management system** built to manage **users, customers, and task workflows** efficiently. It demonstrates **clean backend architecture, RBAC, and real-world API design** using modern backend technologies.
 
-This project is designed as a **backend-focused assignment** showcasing
-authentication, authorization, database design, and API documentation.
+This project is designed as a **backend-focused assignment** showcasing authentication, authorization, database design, and API documentation.
 
 ---
 
@@ -35,15 +33,11 @@ In many organizations, managing customers and employee tasks requires:
 - Role-Based Access Control (RBAC)
 - Protected routes for sensitive operations
 
----
-
 ### 👥 User Management (Admin Only)
 - Create users with roles
 - View all registered users
 - Update user roles (ADMIN / EMPLOYEE)
 - Secure access restricted to admins
-
----
 
 ### 🧾 Customer Management
 - Create and manage customers
@@ -52,20 +46,15 @@ In many organizations, managing customers and employee tasks requires:
 - Admin-only create, update & delete
 - Employees can view customer details
 
----
-
 ### ✅ Task Management
 - Tasks linked to both **customers** and **employees**
 - Admin assigns tasks to employees
 - Employees can view only their assigned tasks
-- Employees can update task status:
-  - **PENDING**
-  - **IN_PROGRESS**
-  - **DONE**
+- Employees can update task status: **PENDING**, **IN_PROGRESS**, **DONE**
 
 ---
 
-### 📄 Swagger API Documentation
+## 📄 Swagger API Documentation
 - Complete API documentation using Swagger
 - JWT authentication enabled in Swagger UI
 - Interactive API testing from browser
@@ -76,7 +65,7 @@ In many organizations, managing customers and employee tasks requires:
 ## 🧠 Role-Based Access Control (RBAC)
 
 | Role | Capabilities |
-|-----|--------------|
+| :--- | :--- |
 | **ADMIN** | Manage users, customers, and tasks |
 | **EMPLOYEE** | View assigned tasks, update task status |
 
@@ -84,63 +73,46 @@ In many organizations, managing customers and employee tasks requires:
 
 ## 🛠️ Tech Stack
 
-### Backend
-- **Node.js**
-- **Express.js**
-- **PostgreSQL**
-- **Prisma ORM**
-
-### Security & Auth
-- **JWT Authentication**
-- **bcrypt password hashing**
-
-### Documentation & Tooling
-- **Swagger (swagger-ui-express)**
-- **Postman (API testing)**
+- **Runtime:** Node.js
+- **Framework:** Express.js
+- **Database:** PostgreSQL
+- **ORM:** Prisma ORM
+- **Security:** JWT, bcrypt
+- **Documentation:** Swagger (swagger-ui-express)
 
 ---
 
 ## 📂 Project Structure
 
+```text
 mini-crm-backend/
-│
 ├── prisma/
-│ └── schema.prisma
-│
+│   └── schema.prisma
 ├── src/
-│ ├── config/
-│ │ ├── prisma.js
-│ │ └── swagger.js
-│ │
-│ ├── constants/
-│ │ ├── roles.js
-│ │ └── taskStatus.js
-│ │
-│ ├── middlewares/
-│ │ ├── auth.middleware.js
-│ │ ├── role.middleware.js
-│ │ └── error.middleware.js
-│ │
-│ ├── modules/
-│ │ ├── auth/
-│ │ ├── users/
-│ │ ├── customers/
-│ │ └── tasks/
-│ │
-│ ├── utils/
-│ │ ├── bcrypt.js
-│ │ ├── jwt.js
-│ │ └── pagination.js
-│ │
-│ ├── app.js
-│ └── server.js
-│
+│   ├── config/
+│   │   ├── prisma.js
+│   │   └── swagger.js
+│   ├── constants/
+│   │   ├── roles.js
+│   │   └── taskStatus.js
+│   ├── middlewares/
+│   │   ├── auth.middleware.js
+│   │   ├── role.middleware.js
+│   │   └── error.middleware.js
+│   ├── modules/
+│   │   ├── auth/
+│   │   ├── users/
+│   │   ├── customers/
+│   │   └── tasks/
+│   ├── utils/
+│   │   ├── bcrypt.js
+│   │   ├── jwt.js
+│   │   └── pagination.js
+│   ├── app.js
+│   └── server.js
 ├── .env
 ├── package.json
 └── README.md
-
-
----
 
 ## ⚙️ Environment Variables
 
@@ -156,7 +128,7 @@ PORT=3000
 ## 🚀 Installation & Setup
 
 ### 1️⃣ Clone the Repository
-git clone <repository-url>
+git clone [https://github.com/Utkarsha155/mini_crm](https://github.com/Utkarsha155/mini_crm)
 cd mini-crm-backend
 
 
